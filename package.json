@@ -1,0 +1,31 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "description": "LDPR",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "css-mqpacker": "^5.0.1",
+    "grunt-cli": "^1.2.0",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.2.3",
+    "less": "^2.7.2"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^3.5.0",
+    "gulp-group-css-media-queries": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gogi213/lib.git"
+  },
+  "author": "Jasuraoka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gogi213/lib/issues"
+  },
+  "homepage": "https://github.com/Gogi213/lib#readme"
+}
