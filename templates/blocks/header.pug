@@ -6,9 +6,10 @@ header.header
       a.join--link Вступить в партию
   div.header--wrapper
     nav.main-nav
-      - var sections = ["Главная", "Региональное отделение", "Депутаты", "Молодежная организация"];
-      for num in sections
-        a.main-nav--sections= num
+      a.main-nav--sections(href="index.html") Главная
+      a.main-nav--sections(href="regional.html") Региональное отделение
+      a.main-nav--sections(href="deputy.html") Депутаты
+      a.main-nav--sections(href="mo.html") Молодежная организация
     div.search
       input.search--field(type="text" name="search")
     
