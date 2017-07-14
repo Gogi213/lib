@@ -1,0 +1,14 @@
+header.header
+  div.title
+    svg.title--logo
+    h1.title--name Вологодское РО
+    div.title--join
+      a.join--link Вступить в партию
+  div.header--wrapper
+    nav.main-nav
+      - var sections = ["Главная", "Региональное отделение", "Депутаты", "Молодежная организация"];
+      for num in sections
+        a.main-nav--sections= num
+    div.search
+      input.search--field(type="text" name="search")
+    

@@ -1,0 +1,35 @@
+main.main
+  div.main-section
+    div.brief
+      h4.brief--name Митинг 23 февраля
+      p.brief--description Краткий текст о том, что будет за митинг и кто на нем присутствует
+    section.news
+      - var x = 3;
+      - for (var i=1; i<=x; i++) {
+      div.news-item
+        h3.news--title Вологодский координатор стал человеком года по версии журнала GQ
+
+        p.news--description Краткий текст новости о том, как координатор смог преодолеть себя и смог стать человеком года...
+        img.news--img(src="#" alt="Фото новости")
+        span.news--date 07.01 2017 в 12:10
+      - }
+
+    aside.indirect
+      div.agitation
+        b.agitation--call Скоро выборы
+        p.agitation--description Ознакомьтесь с кандидатами и местоположением избирательных участков
+        span.agitation--date 19.09.2016
+        svg.agitation--svg
+      div.newspaper
+        img.newspaper--img(src="#" alt="Газета")
+        button.newspaper--button Загрузить газету
+      div.indirect-item
+        b.indirect-item--title Институт Мировых Цивилизаций
+        p.indirect-item--description Текст о том, каким образом осуществляются обучение в ИМЦ, что именно дает образование, какие требования, а также описание того куда нужно идти и что делать, чтобы поступить в ИМЦ.
+      div.indirect-item
+        b.indirect-item--title Помощь от партии
+        p.indirect-item--description.
+          Текст о том, каким образом написать обращение на территории данного региона, 
+          что именно решают при обращениях, как быстро решают проблемы, а также описание 
+          того куда нужно идти и что делать, чтобы написать 
+          обращение к ЛДПР.

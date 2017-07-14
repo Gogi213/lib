@@ -63,9 +63,9 @@ smartgrid('./less', settings);
 
 // чтобы запустить эту задачу, наберите в командной строке gulp jade
 gulp.task('pug', function() {
-  return gulp.src('src/templates/**/*.pug')
+  return gulp.src('templates/**/*.pug')
     .pipe(pug())
-    .pipe(gulp.dest('builds/development')); // указываем gulp куда положить скомпилированные HTML файлы
+    .pipe(gulp.dest('../lib/')); // указываем gulp куда положить скомпилированные HTML файлы
 });
 
 gulp.task("style", function() {
@@ -138,7 +138,9 @@ gulp.task("serve", ["style-dev"], function() {
   });
 
   gulp.watch("less/**/*.less", ["style-dev"]);
+  gulp.watch(("templates/*.pug"), ["pug"]).on("change", server.reload);
   gulp.watch("*.html").on("change", server.reload);
+
 });
 
 gulp.task("build", function(fn) {
