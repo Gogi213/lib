@@ -22,16 +22,10 @@ html(lang="ru")
         div.brief
           h4.brief--name Митинг 23 февраля
           p.brief--description Краткий текст о том, что будет за митинг и кто на нем присутствует
-        section.news
-          - var x = 3;
-          - for (var i=1; i<=x; i++) {
-          div.news-item
-            h3.news--title Вологодский координатор стал человеком года по версии журнала GQ
-
-            p.news--description Краткий текст новости о том, как координатор смог преодолеть себя и смог стать человеком года...
-            img.news--img(src="#" alt="Фото новости")
-            span.news--date 07.01 2017 в 12:10
-          - }
+        
+        //- there is news
+        include blocks/news.pug
+        //- news end
 
         aside.indirect
           div.agitation
@@ -52,7 +46,6 @@ html(lang="ru")
               что именно решают при обращениях, как быстро решают проблемы, а также описание 
               того куда нужно идти и что делать, чтобы написать 
               обращение к ЛДПР.
-
     //- end main
   
   //- there is footer
