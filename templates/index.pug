@@ -19,33 +19,34 @@ html(lang="ru")
       //- end popup  
       
       div.main-section
-        div.brief
-          h4.brief--name Митинг 23 февраля
-          p.brief--description Краткий текст о том, что будет за митинг и кто на нем присутствует
-        
-        //- there is news
-        include blocks/news.pug
-        //- news end
+        a.brief(href="#")
+          div.brief__svg
+            <svg class="brief__svg--flag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.25 44"><title>Asset 1flag</title><line x1="0.5" y1="3.47" x2="0.5" y2="43.5" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/><line x1="37.5" y1="20.1" x2="37.5" y2="0.53" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/><path d="M.5,22.89C10.81,13.26,25.07,32,37.75,20.1" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/><path d="M.5,3.36C10.81-6.28,25.07,12.52,37.75.57" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/></svg>
+          div.brief__wrapper
+            h4.brief__name Митинг 23 февраля
+            p.brief__description Краткий текст о том, что будет за митинг и кто на нем присутствует
+            span.brief__date 23.02.2017
 
         aside.indirect
-          div.agitation
-            b.agitation--call Скоро выборы
-            p.agitation--description Ознакомьтесь с кандидатами и местоположением избирательных участков
-            span.agitation--date 19.09.2016
-            svg.agitation--svg
+          include blocks/agitation.pug
+            
           div.newspaper
-            img.newspaper--img(src="#" alt="Газета")
-            button.newspaper--button Загрузить газету
+            img.newspaper__img(src="#" alt="Газета")
+            button.newspaper__button Загрузить газету
           div.indirect-item
-            b.indirect-item--title Институт Мировых Цивилизаций
-            p.indirect-item--description Текст о том, каким образом осуществляются обучение в ИМЦ, что именно дает образование, какие требования, а также описание того куда нужно идти и что делать, чтобы поступить в ИМЦ.
+            b.indirect-item__title Институт Мировых Цивилизаций
+            p.indirect-item__description Текст о том, каким образом осуществляются обучение в ИМЦ, что именно дает образование, какие требования, а также описание того куда нужно идти и что делать, чтобы поступить в ИМЦ.
           div.indirect-item
-            b.indirect-item--title Помощь от партии
-            p.indirect-item--description.
+            b.indirect-item__title Помощь от партии
+            p.indirect-item__description.
               Текст о том, каким образом написать обращение на территории данного региона, 
               что именно решают при обращениях, как быстро решают проблемы, а также описание 
               того куда нужно идти и что делать, чтобы написать 
               обращение к ЛДПР.
+              
+          //- there is news
+        include blocks/news.pug
+          //- news end
     //- end main
   
   //- there is footer

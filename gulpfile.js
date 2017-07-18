@@ -138,7 +138,7 @@ gulp.task("serve", ["style-dev"], function() {
   });
 
   gulp.watch("less/**/*.less", ["style-dev"]);
-  gulp.watch(("templates/*.pug"), ["pug"]).on("change", server.reload);
+  gulp.watch(("templates/**/*.pug"), ["pug"]).on("change", server.reload);
   gulp.watch("*.html").on("change", server.reload);
 
 });
