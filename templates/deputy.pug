@@ -17,36 +17,41 @@ html(lang="ru")
       //- there is popup
       include blocks/popup.pug
       //- end popup  
-    
-      div.persons
-        h3.persons__title Депутатский корпус
-        div.list
-          - var x = 12
+      div.deputy
+        
+        a.agitation.agitation--color(href="#")
+          div.agitation__svg
+            <svg class="agitation__svg--group" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.91 28.88"><title>Asset 2group</title><path d="M21.15,19.73,10.6,25.5v1.92a1,1,0,0,0,.93,1h26a1,1,0,0,0,.93-1V25.5h0L27.87,19.73" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/><path d="M27.87,19.73c3.82-2.29,3.82-8.25,3.82-8.25V6C31.17,2.87,27.66.5,24.5.5h0C21.35.5,17.83,2.87,17.32,6v5.49s0,5.79,3.84,8.25" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/><path d="M11,19.73.5,25.5v1.92a1,1,0,0,0,.93,1H7.69" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/><path d="M16.83.94A7.33,7.33,0,0,0,14.4.5h0C11.25.5,7.73,2.87,7.22,6v5.49s0,5.79,3.84,8.25" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/></svg>
+          div.agitation__wrapper
+            b.agitation__call Скоро выборы
+            p.agitation__description Ознакомьтесь с кандидатами и местоположением избирательных участков
+            span.agitation__date 19.09.2016
+            
+        div.persons
+          h3.persons__title Депутатский корпус
+          div.list
+            - var x = 12
+            - for (var i=1; i<=x; i++) {
+              div.list__item
+                div.list__wrapper
+                  img.list__img(src="#" alt="Фотография лица отделения")
+                div.list__person
+                  span.list__name Иванов Иван <br> Иванович
+                  span.list__post Должность
+            - }
+        
+        div.laws
+          - var x = 3
           - for (var i=1; i<=x; i++) {
-            div.list__item
-              img.list__img(src="#" alt="Фотография лица отделения")
-              div.list__person
-                span.list__name Иванов Иван Иванович
-                span.list__post Должность
-          - }
-      
-      div.laws
-        - var x = 3
-        - for (var i=1; i<=x; i++) {
-          div.laws__wrapper
-            h3.laws__title Законопроект об увеличении акцизных сборов на табачную и табакосодержащую продукцию
-            a.laws__link(href="#") Законопроект №1837 от 28.06.2017
-            span.laws__label (DOC, 300КБ)
-            span.laws__date 07.01.2017 в 12:10
-        -}
+            div.laws__wrapper
+              h3.laws__title Законопроект об увеличении акцизных сборов на табачную и табакосодержащую продукцию
+              h3.laws__title-mobile Законопроекты региональных депутатов
+              a.laws__mobile-text(href="#") Законопроект об увеличении акцизных сборов на табачную и табакосодержащую продукцию 
+              a.laws__link(href="#") Законопроект №1837 от 28.06.2017
+              span.laws__label (DOC, 300КБ)
+              span.laws__date 07.01.2017 в 12:10
+          -}
           
-      
-      aside.indirect
-        div.agitation
-          b.agitation__call Скоро выборы
-          p.agitation__description Ознакомьтесь с кандидатами и местоположением избирательных участков
-          span.agitation__date 19.09.2016
-          svg.agitation__svg
     
     //- end main
     

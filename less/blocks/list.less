@@ -1,5 +1,36 @@
-@media (max-width: @break_sm) {
-  .list {
-    display: none;
-  }
+@media (max-width: @break_sm) {}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.list__wrapper {
+  border-radius: 50%;
+  background: #D6D6D6;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin: 13px;
+}
+
+.list__item {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.list__item:nth-child(odd) {
+  display: none;
+}
+
+.list__person {
+  display: flex;
+  flex-direction: column;
+  line-height: 18px;
+  justify-content: center;
+}
+
+.list__name {
+  color: #4990E2;
 }

@@ -1,4 +1,4 @@
-@media (max-width: @break_xs){
+@media (max-width: @break_sm) {
   .menu {
     background: #4990e1;
     color: white;
@@ -14,8 +14,12 @@
     margin-left: -11px;
   }
 
-  .menu__name{
+  .menu__name {
     padding-top: 40px;
   }
-
+}
+@media (min-width: @break_sm) {
+  .menu {
+    display: none;
+  }
 }

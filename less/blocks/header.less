@@ -32,3 +32,32 @@
     display: none;
   }
 }
+@media (min-width: @break_sm) {
+  .header__wrapper {
+    background: #3F68B1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .header__logo {
+    width: 100px;
+  }
+
+  .header__name {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .header__btn {
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    text-transform: uppercase;
+    height: 29px;
+    align-self: center;
+  }
+}

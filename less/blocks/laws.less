@@ -1,0 +1,40 @@
+.laws {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.laws__title {
+  margin: 0;
+  color: #4990E2;
+  text-transform: uppercase;
+}
+
+.laws__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.laws__wrapper:nth-child(odd) {
+  display: none;
+}
+
+@media (max-width: @break_sm) {
+  .laws__title {
+    display: none;
+  }
+  .laws__link {
+    display: none;
+  }
+}
+
+@media (min-width: @break_sm) {
+  .laws__mobile-text {
+    display: none;
+  }
+}
+
+.laws__label {
+  text-transform: uppercase;
+  text-decoration: none;
+}
