@@ -2,3 +2,33 @@
   margin-top: 20px;
   background: #EDEEF0;
 }
+
+.deputy__persons {
+  background: white;
+  padding: 20px;
+  margin: 20px auto 20px;
+}
+
+.deputy__title {
+  margin: 0;
+  color: #4990E2;
+  text-transform: uppercase;
+}
+@media (min-width: @break_sm) {
+  .deputy__persons {
+    max-width: 835px;
+  }
+
+  .deputy .agitation {
+    order: 1;
+    flex-basis: 280px;
+  }
+
+  .deputy {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 835px;
+    justify-content: space-between;
+  }
+}

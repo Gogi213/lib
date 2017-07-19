@@ -3,12 +3,39 @@
   display: flex;
   text-decoration: none;
   color: black;
-  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .agitation--color {
   background: #4990e1;
   color: white;
+}
+@media (min-width: @break_sm) {
+  .agitation--color {
+    background: white;
+    color: black;
+  }
+
+  .deputy .agitation__svg--group {
+    display: none;
+  }
+
+  .deputy .agitation__svg {
+    position: absolute;
+    right: -8px;
+    bottom: -7px;
+    width: 80px;
+  }
+
+  .agitation {
+    background: white;
+  }
+}
+@media (max-width: @break_sm) {
+  .agitation__svg--desktop {
+    display: none;
+  }
 }
 
 .agitation__wrapper {

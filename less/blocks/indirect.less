@@ -1,3 +1,33 @@
-.indirect {
-  background: white;
+@media (max-width: @break_sm) {
+  .indirect--desktop {
+    display: none;
+  }
+
+  .indirect {
+    background: white;
+  }
+}
+@media (min-width: @break_sm) {
+  .indirect--mobile {
+    display: none;
+  }
+
+  .indirect--desktop {
+    flex-basis: 31%;
+  }
+
+  .indirect {
+    flex-basis: 33%;
+  }
+
+  .indirect-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .indirect-item__title {
+    text-transform: uppercase;
+    color: #4990e1;
+  }
 }

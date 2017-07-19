@@ -1,13 +1,22 @@
 @media (max-width: @break_sm) {
-
+  .persons {
+    display: none;
+    margin-top: 20px;
+  }
+}
+@media (min-width: @break_sm) {
+  .persons {
+    flex-basis: 50%;
+  }
 }
 
 .persons {
   background: white;
-  margin-top: 20px;
   padding: 20px;
 }
 
 .persons__title {
   margin: 0;
+  color: #4990E2;
+  text-transform: uppercase;
 }

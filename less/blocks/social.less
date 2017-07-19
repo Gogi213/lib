@@ -1,8 +1,21 @@
-.social {
-  padding-top: 27%;
-  padding-bottom: 10%;
-  display: flex;
-  justify-content: space-around;
+@media (max-width: @break_sm) {
+  .social {
+    padding-top: 72px;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: @break_sm) {
+  .social {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 41%;
+  }
+  .social__link {
+    flex-basis: 25%;
+  }
 }
 
 .social__svg--vk {
