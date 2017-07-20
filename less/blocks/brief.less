@@ -1,17 +1,46 @@
+@media (max-width: @break_sm){
+  .brief {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @break_sm) {
+  .brief__svg {
+    display: none;
+  }
+
+  .brief {
+    margin-bottom: 40px;
+  }
+}
+
 .brief {
-  background: #4990e1;
-  padding: 7px 30px;
+  background: #42a1ff;
+  padding: 17px 22px;
   display: flex;
   text-decoration: none;
+  min-height: 83px;
+  position: relative;
+}
+
+.brief__close {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 13px;
+  top: 16px;
 }
 
 .brief__wrapper {
-  flex-basis: 71%;
+  flex-basis: 82%;
+  line-height: 16px;
+  margin-top: 3px;
 }
 
 .brief__name {
   margin: 0;
   color: white;
+  font-size: 17px;
 }
 
 .brief__description {
@@ -25,12 +54,10 @@
 
 .brief__svg {
   flex-grow: 1;
+  flex-basis: 18%;
+  margin-top: 5px;
 }
 
 .brief__svg--flag {
-  width: 53px;
-}
-
-.brief {
-  margin-bottom: 20px;
+  width: 39px;
 }

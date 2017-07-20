@@ -1,6 +1,14 @@
 .mo-news__img {
   width: 100%;
-  height: 188px;
+  height: inherit;
+  background: grey;
+  display: block;
+}
+
+.mo-news__picture-link {
+  width: 100%;
+  height: 180px;
+  display: block;
 }
 
 .mo-news {
@@ -8,8 +16,10 @@
 }
 @media (min-width: @break_sm) {
   .mo-news {
-    flex-basis: 100%;
+    flex-basis: 65.5%;
     margin-bottom: 20px;
   }
-
+  .mo-news__picture-link {
+    height: 340px;
+  }
 }

@@ -14,14 +14,20 @@
   .list__item {
     flex-basis: 50%;
   }
+
+  .list {
+    padding: 0 13% 15px 9px;
+  }
 }
 @media (min-width: @break_sm) {
-  .list__item {
+  .ro .list__item {
+    margin-bottom: 13px;
     flex-basis: 50%;
   }
 
   .deputy__persons .list__item {
-    flex-basis: 30%;
+    flex-basis: 22%;
+    margin-bottom: 12px;
   }
 
   .list__wrapper {
@@ -29,8 +35,10 @@
     height: 60px;
   }
 
-  .list{
+  .list {
     justify-content: space-between;
+    padding-top: 6px;
+    padding-left: 6px;
   }
 }
 
@@ -47,8 +55,8 @@
 .list__person {
   display: flex;
   flex-direction: column;
-  line-height: 18px;
-  justify-content: center;
+  line-height: 17px;
+  margin-top: 9px;
 }
 
 .list__name {

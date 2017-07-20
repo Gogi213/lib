@@ -1,5 +1,5 @@
 .agitation {
-  padding: 7px 30px;
+  padding: 3px 19px;
   display: flex;
   text-decoration: none;
   color: black;
@@ -11,10 +11,20 @@
   background: #4990e1;
   color: white;
 }
+
+.agitation__call {
+  font-weight: bold;
+}
 @media (min-width: @break_sm) {
   .agitation--color {
     background: white;
     color: black;
+    height: 160px;
+    padding: 18px 10px 10px 21px;
+  }
+
+  .agitation__wrapper {
+    line-height: 18px;
   }
 
   .deputy .agitation__svg--group {
@@ -23,36 +33,58 @@
 
   .deputy .agitation__svg {
     position: absolute;
-    right: -8px;
-    bottom: -7px;
+    right: -6px;
+    bottom: -10px;
     width: 80px;
   }
 
   .agitation {
     background: white;
+    position: relative;
+    min-height: 160px;
+  }
+
+  .index .agitation__svg {
+    position: absolute;
+    bottom: -9px;
+    right: -10px;
+  }
+
+  .agitation__svg--group {
+    width: 70px;
+  }
+
+  .agitation__description {
+    margin: 7px 0 22px;
   }
 }
 @media (max-width: @break_sm) {
   .agitation__svg--desktop {
     display: none;
   }
+
+  .agitation__svg--group {
+    width: 41px;
+    margin-top: 5px;
+  }
+
+  .agitation__description {
+    margin: 7px 0;
+  }
 }
 
 .agitation__wrapper {
-  flex-basis: 71%;
+  flex-basis: 89%;
+  line-height: 16px;
 }
 
-.agitation__description {
-  margin: 7px 0;
+.agitation__call {
+  font-size: 16px;
 }
 
 .agitation__svg {
   flex-grow: 1;
-}
-
-.agitation__svg--group {
-  width: 53px;
-  margin-top: 10px;
+  flex-basis: 20%;
 }
 
 .agitation__name {

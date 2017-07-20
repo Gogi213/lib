@@ -5,7 +5,7 @@ html(lang="ru")
     //- there is head
     include blocks/head.pug
     //- end head
-  body#body
+  body.regional#body
     
     //- there is header
     include blocks/header.pug
@@ -28,11 +28,14 @@ html(lang="ru")
               чтобы человек понял, что отделение работает ради него и готово помогать ему в любых вопросах, связанных с исполнительной властью. Данный текст очень важен, так как представляет человеку отделение и команду отделения, которая работает ради него. Текст не должен быть очень маленьким, но и не должен загружать человека и мешать его восприятию понимать то, что происходит 
               в политике региона и в региональном отделении.
             div.attachments
-              b.attachments__title Цель и задачи партии
-              a.attachments__item(href="#") Устав партии
-              span.attachments__label (DOC, 300 КБ)
-              a.attachments__item(href="#") Программа партии
-              span.attachments__label (DOC, 300 КБ)
+              <svg class="attachments__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.28 20.39"><title>Asset 6papers</title><g id="d17e7557-2a8b-4288-bf0a-d7ec27c6c262" data-name="Layer 2"><g id="9a1f9b31-e21a-4a8c-a27b-1e50379d6420" data-name="О РО"><g id="8cf6a992-0781-4322-bb21-81c5c3558bfc" data-name="Иконка документов"><polygon points="12.13 7.99 7.74 7.99 7.74 3.36 12.13 7.99" style="fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round"/><polygon points="18.47 5.13 14.07 5.13 14.07 0.5 18.47 5.13" style="fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round"/><path d="M7.72,3.36H.81a.32.32,0,0,0-.31.33V19.56a.32.32,0,0,0,.31.33h11a.32.32,0,0,0,.31-.33V8" style="fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round"/><path d="M14.07,17.16h4.4a.32.32,0,0,0,.31-.33V5.26" style="fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round"/><path d="M14.06.5H7.15a.32.32,0,0,0-.31.33v.33" style="fill:none;stroke:#010101;stroke-linecap:round;stroke-linejoin:round"/></g></g></g></svg>
+              p.attachments__title Цель и задачи партии
+              div.attachments__wrapper
+                a.attachments__item(href="#") Устав партии
+                span.attachments__label (DOC, 300 КБ)
+              div.attachments__wrapper
+                a.attachments__item(href="#") Программа партии
+                span.attachments__label (DOC, 300 КБ)
           div.persons
             h3.persons__title Лица отделения
             div.list

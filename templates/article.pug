@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="ru")
+
+  head
+    //- there is head
+    include blocks/head.pug
+    //- end head
+  body.article-page#body
+    
+    //- there is header
+    include blocks/header.pug
+    //- end header
+    
+    //- there is main
+    main.main
+      
+      //- there is popup
+      include blocks/popup.pug
+      //- end popup  
+      
+      div.article
+        div.article__item
+          h3.article__title Помощь людям от партии
+          p.article__text. 
+            Текст статьи текст статьи текст статьи текст статьи текст статьи текст статьи 
+            текст статьи текст статьи текст статьи текст статьи текст статьи текст статьи 
+            текст статьи текст статьи текст статьи
+            
+        div.article__item--border
+          div.article__person
+            div.article__img
+              img.article__photo
+            div.article__wrapper
+              span.article__name Иванов Иван Иванович
+              span.article__post Должность
+          p.article__quote «Прямое цитирование важной или яркой реплики человека, о котором говорится в статье, но не болше 10-15 слов.»
+          
+        div.article__item
+          p.article__text. 
+            Текст статьи текст статьи текст статьи текст статьи текст статьи текст статьи 
+            текст статьи текст статьи текст статьи текст статьи текст статьи текст статьи текст статьи текст статьи 
+            текст статьитекст статьи текст статьи текст статьи текст статьи текст статьитекст статьи текст статьи 
+            текст статьи текст статьи текст статьи
+            
+        div.article__item
+          div.slider
+            div.slider__point
+              img.slider__img
+            div.slider__point
+              img.slider__img
+            div.slider__point
+              img.slider__img
+            div.pagination
+              div.pagination__dot
+              div.pagination__dot
+              div.pagination__dot
+
+      
+
+    //- end main
+  
+  //- there is footer
+  include blocks/footer.pug 
+  //- end footer

@@ -1,5 +1,43 @@
+.search {
+  positive: relative;
+}
 @media (max-width: @break_sm) {
   .search {
-    padding-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 17px;
+  }
+
+  .search__field {
+    border-radius: 10px;
+    border: 0;
+    width: 215px;
+    visibility: hidden;
+  }
+
+  .search__svg {
+    width: 23px;
+    position: absolute;
+    left: 4.5%;
+  }
+}
+@media (min-width: @break_sm) {
+  .search {
+    position: absolute;
+    right: -36px;
+    top: 14px;
+  }
+
+  .search__field {
+    border: none;
+    border-radius: 5px;
+    visibility: hidden;
+  }
+
+  .search__magnifier {
+    width: 20px;
+    position: absolute;
+    right: 26px;
+    top: 7px;
+    z-index: 10;
   }
 }

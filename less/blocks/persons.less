@@ -2,21 +2,26 @@
   .persons {
     display: none;
     margin-top: 20px;
+    padding: 20px;
+    margin: 0;
   }
 }
 @media (min-width: @break_sm) {
   .persons {
     flex-basis: 50%;
   }
+
+  .persons__title {
+    margin: 14px 11px 10px 21px;
+    font-style: 18px;
+  }
 }
 
 .persons {
   background: white;
-  padding: 20px;
 }
 
 .persons__title {
-  margin: 0;
   color: #4990E2;
   text-transform: uppercase;
 }

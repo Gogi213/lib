@@ -5,7 +5,7 @@ html(lang="ru")
     //- there is head
     include blocks/head.pug
     //- end head
-  body#body
+  body.index#body
     
     //- there is header
     include blocks/header.pug
@@ -21,6 +21,7 @@ html(lang="ru")
       div.main-section
         div.main-section__wrapper
           a.brief(href="#")
+            <svg class="brief__close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><defs><clipPath id="cc56e759-15d9-4f42-9648-bf0944f3c76c" transform="translate(-568 -15.93)"><circle cx="576.5" cy="24.43" r="7.5" style="fill:none"/></clipPath><clipPath id="f2c775bd-f48c-437b-b707-033fbb53e512" transform="translate(-568 -15.93)"><rect width="600" height="101" style="fill:none"/></clipPath></defs><title>Asset 2крест</title><g id="f6527e10-ca9c-4375-8085-82de83a3597e" data-name="Layer 2"><g id="1a2b84b1-3b0b-4d86-b5bd-df2cd6a377f7" data-name="Главная"><g style="clip-path:url(#cc56e759-15d9-4f42-9648-bf0944f3c76c)"><g style="clip-path:url(#f2c775bd-f48c-437b-b707-033fbb53e512)"><circle cx="8.5" cy="8.5" r="7.5" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/></g></g><line x1="6.02" y1="6.02" x2="11.19" y2="11.2" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/><line x1="11.19" y1="6.02" x2="6.02" y2="11.2" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/></g></g></svg>
             div.brief__svg
               <svg class="brief__svg--flag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.25 44"><title>Asset 1flag</title><line x1="0.5" y1="3.47" x2="0.5" y2="43.5" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/><line x1="37.5" y1="20.1" x2="37.5" y2="0.53" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/><path d="M.5,22.89C10.81,13.26,25.07,32,37.75,20.1" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/><path d="M.5,3.36C10.81-6.28,25.07,12.52,37.75.57" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round"/></svg>
             div.brief__wrapper
@@ -33,10 +34,10 @@ html(lang="ru")
               img.newspaper__img(src="#" alt="Газета")
               button.newspaper__button Загрузить газету
             div.indirect-item
-              b.indirect-item__title Институт Мировых Цивилизаций
+              p.indirect-item__title Институт Мировых Цивилизаций
               p.indirect-item__description Текст о том, каким образом осуществляются обучение в ИМЦ, что именно дает образование, какие требования, а также описание того куда нужно идти и что делать, чтобы поступить в ИМЦ.
             div.indirect-item
-              b.indirect-item__title Помощь от партии
+              p.indirect-item__title Помощь от партии
               p.indirect-item__description.
                 Текст о том, каким образом написать обращение на территории данного региона, 
                 что именно решают при обращениях, как быстро решают проблемы, а также описание 
@@ -52,10 +53,10 @@ html(lang="ru")
             img.newspaper__img(src="#" alt="Газета")
             button.newspaper__button Загрузить газету
           div.indirect-item
-            b.indirect-item__title Институт Мировых Цивилизаций
+            p.indirect-item__title Институт Мировых Цивилизаций
             p.indirect-item__description Текст о том, каким образом осуществляются обучение в ИМЦ, что именно дает образование, какие требования, а также описание того куда нужно идти и что делать, чтобы поступить в ИМЦ.
           div.indirect-item
-            b.indirect-item__title Помощь от партии
+            p.indirect-item__title Помощь от партии
             p.indirect-item__description.
               Текст о том, каким образом написать обращение на территории данного региона, 
               что именно решают при обращениях, как быстро решают проблемы, а также описание 

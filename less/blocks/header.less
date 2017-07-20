@@ -2,18 +2,19 @@
   .header__wrapper {
     display: flex;
     justify-content: flex-end;
-    background: #365FCA;
+    background: #015fcd;
     height: 61px;
-    padding: 23px;
+    padding: 12px;
   }
 
   .header__btn {
     background: transparent;
-    border: 3px solid white;
+    border: 1px solid white;
     color: white;
     text-transform: uppercase;
-    height: 29px;
     align-self: center;
+    width: 116px;
+    font-size: 12px;
   }
 
   .header__logo {
@@ -34,17 +35,18 @@
 }
 @media (min-width: @break_sm) {
   .header__wrapper {
-    background: #3F68B1;
+    background: #0344ff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
-    max-width: 1000px;
     margin: 0 auto;
+    max-width: 901px;
+    padding-top: 25px;
   }
 
   .header__logo {
-    width: 100px;
+    width: 146px;
   }
 
   .header__name {
@@ -57,7 +59,10 @@
     border: 3px solid white;
     color: white;
     text-transform: uppercase;
-    height: 29px;
     align-self: center;
+    padding: 5px 14px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }

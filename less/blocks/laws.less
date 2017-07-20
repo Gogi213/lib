@@ -1,39 +1,68 @@
 .laws {
   background: white;
-  padding: 20px;
+  padding: 0 20px;
+}
+
+.laws__container {
+  display: flex;
 }
 
 .laws__title {
   margin: 0;
-  color: #4990E2;
-  text-transform: uppercase;
 }
 
 .laws__wrapper {
   display: flex;
   flex-direction: column;
+  line-height: 22px;
+  margin-bottom: 22px;
+  margin-top: 14px;
 }
-
-.laws__wrapper:nth-child(odd) {
-  display: none;
-}
-
 @media (max-width: @break_sm) {
   .laws__title {
     display: none;
   }
+
+  .laws__wrapper:nth-child(odd) {
+    display: none;
+  }
+
   .laws__link {
     display: none;
   }
-}
 
+  .laws__wrapper {
+    line-height: 20px;
+  }
+
+  .laws__mobile--text {
+    color: #4990E2;
+  }
+
+  .laws__title--mobile {
+    margin: 0;
+    padding: 8px 0;
+    color: #4990E2;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+}
 @media (min-width: @break_sm) {
-  .laws__mobile-text {
+  .laws__mobile--text {
     display: none;
   }
 
   .laws {
-    flex-basis: 485px;
+    flex-basis: 65.5%;
+  }
+
+  .laws__title--mobile {
+    display: none;
+  }
+
+  .laws__link {
+    color: #4990E2;
+    flex-basis: 41%;
   }
 }
 

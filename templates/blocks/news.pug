@@ -2,11 +2,12 @@ section.news
   - var x = 3;
   - for (var i=1; i<=x; i++) {
   div.news__item
-    h3.news__title Вологодский координатор стал человеком года по версии журнала GQ
+    a.news__link(href="article.html")
+      h3.news__title Вологодский координатор стал человеком года по версии журнала GQ
 
     p.news__description Краткий текст новости о том, как координатор смог преодолеть себя и смог стать человеком года...
     p.news__turn Показать полностью
-    a.news__link(href="#")
+    a.news__link.news__link--img(href="article.html")
       img.news__img(src="#" alt="Фото новости")
     span.news__date 07.01 2017 в 12:10
   - }

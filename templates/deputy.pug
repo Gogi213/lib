@@ -5,7 +5,7 @@ html(lang="ru")
     //- there is head
     include blocks/head.pug
     //- end head
-  body#body
+  body.deputy-page#body
     
     //- there is header
     include blocks/header.pug
@@ -16,7 +16,11 @@ html(lang="ru")
       
       //- there is popup
       include blocks/popup.pug
-      //- end popup  
+      //- end popup 
+      
+      //- there is popup-photo
+      include blocks/popup-photo
+      //- end popup-photo 
       div.deputy
         
         a.agitation.agitation--color(href="#")
@@ -47,10 +51,11 @@ html(lang="ru")
           - for (var i=1; i<=x; i++) {
             div.laws__wrapper
               h3.laws__title Законопроект об увеличении акцизных сборов на табачную и табакосодержащую продукцию
-              h3.laws__title-mobile Законопроекты региональных депутатов
-              a.laws__mobile-text(href="#") Законопроект об увеличении акцизных сборов на табачную и табакосодержащую продукцию 
-              a.laws__link(href="#") Законопроект №1837 от 28.06.2017
-              span.laws__label (DOC, 300КБ)
+              h3.laws__title--mobile Законопроекты региональных депутатов
+              a.laws__mobile--text(href="#") Законопроект об увеличении акцизных сборов на табачную и табакосодержащую продукцию 
+              div.laws__container
+                a.laws__link(href="#") Законопроект №1837 от 28.06.2017
+                span.laws__label (DOC, 300КБ)
               span.laws__date 07.01.2017 в 12:10
           -}
           
