@@ -19,7 +19,11 @@ html(lang="ru")
       //- end popup  
       
       div.article
-        div.article__item
+        div.article__item.article__item--desktop
+          img.article__picture(src="#" alt="Фото тайтл")
+          div.article__inner
+            h3.article__title Институт Мировых<br> Цивилизаций
+        div.article__item.article__item--mobile
           h3.article__title Помощь людям от партии
           p.article__text. 
             Текст статьи текст статьи текст статьи текст статьи текст статьи текст статьи 
@@ -31,7 +35,7 @@ html(lang="ru")
             div.article__img
               img.article__photo
             div.article__wrapper
-              span.article__name Иванов Иван Иванович
+              span.article__name Иванов Иван<br class="article__name--desktope"> Иванович
               span.article__post Должность
           p.article__quote «Прямое цитирование важной или яркой реплики человека, о котором говорится в статье, но не болше 10-15 слов.»
           
