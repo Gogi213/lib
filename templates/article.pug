@@ -48,16 +48,22 @@ html(lang="ru")
             
         div.article__item
           div.slider
-            div.slider__point
-              img.slider__img
-            div.slider__point
-              img.slider__img
-            div.slider__point
-              img.slider__img
-            div.pagination
-              div.pagination__dot
-              div.pagination__dot
-              div.pagination__dot
+            img.slider__arrow.slider__arrow--left(src="img/arrow-left.png" alt="Стрелка влево")
+            img.slider__arrow.slider__arrow--right(src="img/arrow-right.png" alt="Стрелка вправо")
+            div.slider__wrapper
+              div.slider__point
+                img.slider__img
+              div.slider__point
+                img.slider__img
+              div.slider__point
+                img.slider__img
+            div.pagination-dot
+              div.pagination-dot__item
+              div.pagination-dot__item
+              div.pagination-dot__item      
+            div.pagination-number
+              b.pagination-number__item 1 из 12
+            
 
       
 

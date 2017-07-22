@@ -22,7 +22,54 @@
 }
 @media (min-width: @break_sm) {
   .popup {
-    max-width: 897px;
-    margin: 20px auto;
+    background: #f1f6f6;
+    margin: 66px 20px;
   }
+
+  .popup__wrapper {
+    background: #4990e1;
+    max-width: 917px;
+    margin: 0 auto;
+  }
+}
+
+.backtosite {
+  flex-basis: 150px;
+  text-align: end;
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: none;
+}
+// Функциональные классы для popup
+
+.overflow {
+  overflow-y: hidden;
+}
+// Для фиксирования по центру
+
+.fixed {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+//Разворот хэдера
+
+.reverse {
+  flex-direction: row-reverse;
+}
+// Скрыть header__name
+
+.visibility {
+  visibility: hidden;
+}
+
+.none {
+  display: none !important;
+}
+
+.block {
+  display: block;
 }
