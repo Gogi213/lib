@@ -5,10 +5,20 @@ header {
 @media (max-width: @break_sm) {
   .header__wrapper {
     display: flex;
-    justify-content: flex-end;
-    background: #015fcd;
+    justify-content: space-between;
+    background: #3F68B1;
     height: 61px;
     padding: 12px;
+    position: relative;
+    align-items: center;
+  }
+  .header__svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__link {
+    display: none;
   }
 
   .header__btn {
@@ -39,7 +49,7 @@ header {
 }
 @media (min-width: @break_sm) {
   .header__wrapper {
-    background: #0344ff;
+    background: #3F68B1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,6 +57,9 @@ header {
     margin: 0 auto;
     max-width: 901px;
     padding-top: 25px;
+  }
+  .header__svg {
+    display: none;
   }
 
   .header__logo {

@@ -41,7 +41,9 @@ html(lang="ru")
             - for (var i=1; i<=x; i++) {
               div.list__item
                 div.list__wrapper
-                  img.list__img(src="#" alt="Фотография лица отделения")
+                  picture.list__img
+                    source(srcset="#" media="(min-width: 780px)")
+                    img(src="#" alt="Фото лиц отделения")
                 div.list__person
                   span.list__name Иванов Иван <br> Иванович
                   span.list__post Должность

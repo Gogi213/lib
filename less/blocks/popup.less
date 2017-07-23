@@ -20,24 +20,10 @@
   font-weight: bold;
   font-size: 18px;
 }
-@media (min-width: @break_sm) {
-  .popup {
-    background: #f1f6f6;
-    margin: 66px 20px;
-  }
-
-  .popup__wrapper {
-    background: #4990e1;
-    max-width: 917px;
-    margin: 0 auto;
-  }
-}
 
 .backtosite {
   display: none;
-  flex-basis: 180px;
   text-align: end;
-  font-size: 19px;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -49,6 +35,41 @@
   &__arrow {
     width: 30px;
     height: 30px;
+  }
+}
+@media (min-width: @break_sm) {
+  .popup {
+    background: #f1f6f6;
+    margin: 66px 20px;
+  }
+
+  .backtosite {
+    flex-basis: 180px;
+    font-size: 19px;
+  }
+
+  .popup__wrapper {
+    background: #42a1ff;
+    max-width: 917px;
+    margin: 0 auto;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: @break_sm) {
+  .backtosite {
+    flex-basis: 116px;
+  }
+
+  .bacltosite__text {
+    font-size: 16px;
+  }
+
+  .backtosite__arrow {
+    width: 21px;
+    height: 18px;
   }
 }
 // Функциональные классы для popup
@@ -65,12 +86,7 @@
   height: 100vh;
 }
 //Разворот хэдера
-
-.reverse {
-  flex-direction: row-reverse;
-}
 // Скрыть header__name
-
 .visibility {
   visibility: hidden;
 }

@@ -17,10 +17,12 @@ html(lang="ru")
       //- there is popup
       include blocks/popup.pug
       //- end popup  
-      
+       
       div.article
         div.article__item.article__item--desktop
-          img.article__picture(src="#" alt="Фото тайтл")
+          picture.article__picture
+            source(srcset="#" media="(min-width: 780px)")
+            img(src="#" alt="Фото")
           div.article__inner
             h3.article__title Институт Мировых<br> Цивилизаций
         div.article__item.article__item--mobile
@@ -33,7 +35,9 @@ html(lang="ru")
         div.article__item--border
           div.article__person
             div.article__img
-              img.article__photo
+              picture.article__photo
+                source(srcset="#" media="(min-width: 780px)")
+                img(src="#" alt="Фото")
             div.article__wrapper
               span.article__name Иванов Иван<br class="article__name--desktope"> Иванович
               span.article__post Должность

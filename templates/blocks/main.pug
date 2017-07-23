@@ -10,7 +10,9 @@ main.main
         h3.news__title Вологодский координатор стал человеком года по версии журнала GQ
 
         p.news__description Краткий текст новости о том, как координатор смог преодолеть себя и смог стать человеком года...
-        img.news__img(src="#" alt="Фото новости")
+        picture.news__img
+          source(srcset="#" media="(min-width: 780px)")
+          img(src="#" alt="Фото новости")
         span.news__date 07.01 2017 в 12:10
       - }
 
@@ -21,7 +23,9 @@ main.main
         span.agitation__date 19.09.2016
         svg.agitation__svg
       div.newspaper
-        img.newspaper__img(src="#" alt="Газета")
+        picture.newspaper__img
+          source(srcset="#" media="(min-width: 780px)")
+          img(src="#" alt="Газета")
         button.newspaper__button Загрузить газету
       div.indirect-item
         b.indirect-item__title Институт Мировых Цивилизаций

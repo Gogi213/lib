@@ -8,6 +8,8 @@ section.news
     p.news__description Краткий текст новости о том, как координатор смог преодолеть себя и смог стать человеком года...
     p.news__turn Показать полностью
     a.news__link.news__link--img(href="article.html")
-      img.news__img(src="#" alt="Фото новости")
+      picture.news__img
+        source(srcset="#" media="(min-width: 780px)")
+        img(src="#" alt="Фото новости")
     span.news__date 07.01 2017 в 12:10
   - }

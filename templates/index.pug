@@ -31,7 +31,9 @@ html(lang="ru")
           aside.indirect.indirect--mobile
             include blocks/agitation.pug  
             div.newspaper
-              img.newspaper__img(src="#" alt="Газета")
+              picture.newspaper__img
+                source(srcset="#" media="(min-width: 780px)")
+                img(src="#" alt="Газета")
               button.newspaper__button Загрузить газету
             div.indirect-item
               p.indirect-item__title Институт Мировых Цивилизаций
@@ -50,7 +52,9 @@ html(lang="ru")
         aside.indirect.indirect--desktop
           include blocks/agitation.pug  
           div.newspaper
-            img.newspaper__img(src="#" alt="Газета")
+            picture.newspaper__img
+              source(srcset="#" media="(min-width: 780px)")
+              img(src="#" alt="Газета")
             button.newspaper__button Загрузить газету
           div.indirect-item
             p.indirect-item__title Институт Мировых Цивилизаций

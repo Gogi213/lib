@@ -1,7 +1,9 @@
 div.popup-photo
   div.popup-photo__wrapper
     div.popup-photo__img
-      img.popup-photo__photo(src="#" alt="Фото")
+      picture.popup-photo__photo
+        source(srcset="#" media="(min-width: 780px)")
+        img(src="#" alt="Фото")
     div.popup-photo__label
       span.popup-photo__name
       span.popup-photo__post    

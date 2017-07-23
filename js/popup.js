@@ -24,17 +24,28 @@ function popup() {
 // }
 
 
-// window.onload = function () {
-//   //ищем элемент по селектору
-//   var a = document.querySelector('.search');
-//   //вешаем на него события
-//   a.onmouseout = function(e) {
-//     document.getElementById('search__field').style.visibility='visible';
-//     document.getElementById('search__magnifier').style.visibility='hidden';
-//   }
-//
-//   a.onmouseover = function(e) {
-//     document.getElementById('search__field').style.visibility='hidden';
-//     document.getElementById('search__magnifier').style.visibility='visibi';
-//   };
-// }
+window.onload = function() {
+  //ищем элемент по селектору
+  var a = document.querySelector('#search');
+  var b = document.querySelector('#search1');
+  //вешаем на него события
+  a.onmouseout = function(e) {
+    document.getElementById('search__field').style.visibility = 'hidden';
+    document.getElementById('search__magnifier').style.visibility = 'visible';
+  }
+
+  a.onmouseover = function(e) {
+    document.getElementById('search__field').style.visibility = 'visible';
+    document.getElementById('search__magnifier').style.visibility = 'hidden';
+  }
+
+  b.onmouseout = function(e) {
+    document.getElementById('search__field1').style.visibility = 'hidden';
+    document.getElementById('search__magnifier1').style.visibility = 'visible';
+  }
+
+  b.onmouseover = function(e) {
+    document.getElementById('search__field1').style.visibility = 'visible';
+    document.getElementById('search__magnifier1').style.visibility = 'hidden';
+  }
+}

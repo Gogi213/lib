@@ -20,7 +20,9 @@ html(lang="ru")
       div.main__wrapper
         div.mo-news
           a.mo-news__picture-link(href="#" alt="Картинка МО")
-            img.mo-news__img(src="#" alt="Картинка в тайтл")
+            picture.mo-news__img
+              source(srcset="#" media="(min-width: 780px)")
+              img(src="#" alt="Картинка в тайтл")
         //- there is news
         include blocks/news.pug
         //- end news
