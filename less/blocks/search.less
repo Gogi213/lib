@@ -19,6 +19,7 @@
     height: 23px;
     position: absolute;
     left: 4.5%;
+    visibility: visible;
   }
 }
 @media (min-width: @break_sm) {
@@ -26,6 +27,8 @@
     position: absolute;
     right: -36px;
     top: 14px;
+    padding: 16px 21px;
+    top: 0;
   }
 
   .search__field {
@@ -38,7 +41,13 @@
     width: 20px;
     position: absolute;
     right: 26px;
-    top: 3px;
+    top: 15px;
     z-index: 10;
+  }
+
+  .search__magnifier:hover {
+    .search__input {
+      visibility: visible;
+    }
   }
 }
