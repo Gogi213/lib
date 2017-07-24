@@ -28,6 +28,12 @@ window.onload = function() {
   //ищем элемент по селектору
   var a = document.querySelector('#search');
   var b = document.querySelector('#search1');
+  // var c = document.getElementsByClassName('list__wrapper');
+  var c = document.querySelector(".list__wrapper");
+  var d = document.querySelector(".popup-photo__svg");
+  // document.getElementById('#search').style.display = 'none';
+
+
   //вешаем на него события
   a.onmouseout = function(e) {
     document.getElementById('search__field').style.visibility = 'hidden';
@@ -48,4 +54,17 @@ window.onload = function() {
     document.getElementById('search__field1').style.visibility = 'visible';
     document.getElementById('search__magnifier1').style.visibility = 'hidden';
   }
+
+  c.onclick = function(e) {
+    document.querySelector(".popup-photo").style.display = 'block';
+    document.querySelector(".header").classList.toggle("fixed");
+    document.querySelector(".footer").classList.toggle("fixed");
+  }
+
+  d.onclick = function(e) {
+    document.querySelector(".popup-photo").style.display = 'none';
+    document.querySelector(".header").classList.toggle("fixed");
+    document.querySelector(".footer").classList.toggle("fixed");
+  }
+
 }

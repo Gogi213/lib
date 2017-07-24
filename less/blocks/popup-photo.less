@@ -1,3 +1,65 @@
 .popup-photo {
   display: none;
+  background: #D6D6D6;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  &__wrapper {
+    // margin: 160px 20px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: #648EDD;
+    padding: 6px;
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  &__post {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  &__svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    top: 84px;
+    z-index: 50;
+  }
+}
+
+.popup-photo__img {
+  border-radius: 50%;
+  background: grey;
+  width: 180px;
+  height: 180px;
+  margin: 161px auto 39px;
+  overflow: hidden;
+}
+@media (min-width: @break_sm) {
+  .popup-photo {
+    top: 129px;
+    max-width: 961px;
+    left: 50%;
+    margin-left: -489px;
+
+    &__img {
+      width: 290px;
+      height: 290px;
+      // margin: 91px auto 39px;
+    }
+  }
 }
