@@ -83,7 +83,6 @@
   position: fixed;
   left: 0;
   width: 100%;
-  height: 100vh;
 }
 //Разворот хэдера
 // Скрыть header__name
@@ -96,9 +95,13 @@
 }
 
 .block {
-  display: block;
+  display: block !important;
 }
 
 .flex {
   display: flex;
+}
+
+.header-height {
+  min-height: 100px !important;
 }

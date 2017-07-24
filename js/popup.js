@@ -29,10 +29,15 @@ window.onload = function() {
   var a = document.querySelector('#search');
   var b = document.querySelector('#search1');
   // var c = document.getElementsByClassName('list__wrapper');
-  var c = document.querySelector(".list__wrapper");
+  // var c = document.querySelectorAll(".list__wrapper");
   var d = document.querySelector(".popup-photo__svg");
   // document.getElementById('#search').style.display = 'none';
-
+  var c = document.querySelectorAll('.list__wrapper');
+  for (var i in c)
+    c[i].onclick = function() {
+      document.querySelector(".popup-photo").classList.toggle("block");
+      document.querySelector(".header").classList.toggle("fixed");
+    };
 
   //вешаем на него события
   a.onmouseout = function(e) {
@@ -55,16 +60,10 @@ window.onload = function() {
     document.getElementById('search__magnifier1').style.visibility = 'hidden';
   }
 
-  c.onclick = function(e) {
-    document.querySelector(".popup-photo").style.display = 'block';
+  d.onclick = function(q) {
+    document.querySelector(".popup-photo").classList.toggle("block");
     document.querySelector(".header").classList.toggle("fixed");
-    document.querySelector(".footer").classList.toggle("fixed");
   }
 
-  d.onclick = function(e) {
-    document.querySelector(".popup-photo").style.display = 'none';
-    document.querySelector(".header").classList.toggle("fixed");
-    document.querySelector(".footer").classList.toggle("fixed");
-  }
 
 }
