@@ -27,13 +27,13 @@
     position: absolute;
     right: -36px;
     top: 14px;
-    padding: 16px 21px;
+    padding: 13px 21px;
     top: 0;
   }
 
   .search__field {
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     visibility: hidden;
   }
 
@@ -49,5 +49,10 @@
     .search__input {
       visibility: visible;
     }
+  }
+}
+@media (min-width: @break_sm) and (max-width: @break_md) {
+  .search {
+    right: -2.5%;
   }
 }

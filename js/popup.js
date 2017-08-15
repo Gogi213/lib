@@ -1,69 +1,46 @@
-function popup() {
-  var headWrap = document.getElementById('header__wrapper');
-  var headName = document.getElementById('header__name');
-  var head = document.getElementById('header');
-  var backtosite = document.getElementById('backtosite');
-  var popup = document.getElementById('popup');
-  var headBtn = document.getElementById('join');
-  headWrap.classList.toggle("reverse");
-  popup.classList.toggle("block");
-  popup.nextElementSibling.classList.toggle("none");
-  headName.classList.toggle("visibility");
-  headBtn.classList.toggle("none");
-  backtosite.classList.toggle("flex");
-}
+$(document).ready(function() {
+  $(".backtosite").click(function() {
+    $("#header__wrapper").toggleClass("reverse");
+    $("#popup").toggleClass("block");
+    $("#join").toggleClass("none");
+    $("#header__name").toggleClass("visibility");
+    $(".backtosite").toggleClass("flex");
+    $("#popup").next().toggleClass("none");
+  });
+  $(".header__btn").click(function() {
+    $("#header__wrapper").toggleClass("reverse");
+    $("#popup").toggleClass("block");
+    $("#join").toggleClass("none");
+    $("#header__name").toggleClass("visibility");
+    $(".backtosite").toggleClass("flex");
+    $("#popup").next().toggleClass("none");
+  });
 
-// window.onload = function() {
-//   var search = document.getElementsById("search");
-//   search.onmouseover = visible;
-// }
-//
-// function visible(event) {
-//   var class = event.target;
-//   class.classList.toggle("visibility");
-// }
+  $("#search").mouseout(function() {
+    $(".search__field").css("visibility", "hidden");
+    $("search__svg").css("visibility", "visible");
+  });
+  $("#search").mouseover(function() {
+    $(".search__field").css("visibility", "visible");
+    $(".search__svg").css("visibility", "hidden");
+  });
 
+  $("#search1").mouseout(function() {
+    $(".search__field").css("visibility", "hidden");
+    $(".search__magnifier").css("visibility", "visible");
+  });
+  $("#search1").mouseover(function() {
+    $(".search__field").css("visibility", "visible");
+    $(".search__magnifier").css("visibility", "hidden");
+  });
 
-window.onload = function() {
-  //ищем элемент по селектору
-  var a = document.querySelector('#search');
-  var b = document.querySelector('#search1');
-  // var c = document.getElementsByClassName('list__wrapper');
-  // var c = document.querySelectorAll(".list__wrapper");
-  var d = document.querySelector(".popup-photo__svg");
-  // document.getElementById('#search').style.display = 'none';
-  var c = document.querySelectorAll('.list__wrapper');
-  for (var i in c)
-    c[i].onclick = function() {
-      document.querySelector(".popup-photo").classList.toggle("block");
-      document.querySelector(".header").classList.toggle("fixed");
-    };
+  $(".list__wrapper").click(function() {
+    $(".popup-photo").toggleClass("block");
+    $(".header").toggleClass("fixed");
+  });
 
-  //вешаем на него события
-  a.onmouseout = function(e) {
-    document.getElementById('search__field').style.visibility = 'hidden';
-    document.getElementById('search__magnifier').style.visibility = 'visible';
-  }
-
-  a.onmouseover = function(e) {
-    document.getElementById('search__field').style.visibility = 'visible';
-    document.getElementById('search__magnifier').style.visibility = 'hidden';
-  }
-
-  b.onmouseout = function(e) {
-    document.getElementById('search__field1').style.visibility = 'hidden';
-    document.getElementById('search__magnifier1').style.visibility = 'visible';
-  }
-
-  b.onmouseover = function(e) {
-    document.getElementById('search__field1').style.visibility = 'visible';
-    document.getElementById('search__magnifier1').style.visibility = 'hidden';
-  }
-
-  d.onclick = function(q) {
-    document.querySelector(".popup-photo").classList.toggle("block");
-    document.querySelector(".header").classList.toggle("fixed");
-  }
-
-
-}
+  $(".popup-photo__svg").click(function() {
+    $(".popup-photo").toggleClass("block");
+    $(".header").toggleClass("fixed");
+  });
+});
